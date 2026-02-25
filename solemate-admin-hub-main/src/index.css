@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 10% 8%;
+    --foreground: 38 25% 88%;
+
+    --card: 30 8% 12%;
+    --card-foreground: 38 25% 88%;
+
+    --popover: 30 8% 14%;
+    --popover-foreground: 38 25% 88%;
+
+    --primary: 38 45% 62%;
+    --primary-foreground: 30 10% 8%;
+
+    --secondary: 30 8% 16%;
+    --secondary-foreground: 38 20% 75%;
+
+    --muted: 30 6% 18%;
+    --muted-foreground: 30 10% 50%;
+
+    --accent: 38 45% 62%;
+    --accent-foreground: 30 10% 8%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 38 45% 62%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 30 10% 6%;
+    --sidebar-foreground: 38 20% 75%;
+    --sidebar-primary: 38 45% 62%;
+    --sidebar-primary-foreground: 30 10% 8%;
+    --sidebar-accent: 30 8% 14%;
+    --sidebar-accent-foreground: 38 25% 88%;
+    --sidebar-border: 30 8% 16%;
+    --sidebar-ring: 38 45% 62%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 30 10% 8%;
+
+    --chart-1: 38 45% 62%;
+    --chart-2: 30 30% 45%;
+    --chart-3: 38 25% 50%;
+    --chart-4: 30 15% 35%;
+    --chart-5: 38 35% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
